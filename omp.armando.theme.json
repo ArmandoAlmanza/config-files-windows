@@ -1,0 +1,114 @@
+{
+	"$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+	"final_space": true,
+	"blocks": [
+		{
+			"type": "prompt",
+			"alignment": "left",
+			"newline": true,
+			"segments": [
+				{
+					"type": "session",
+					"style": "diamond",
+					"trailing_diamond": "\uE0B4 ",
+					"leading_diamond": "\uE0B6",
+					"foreground": "#9B6BDF",
+					"background": "#424242",
+					"properties": {
+						"prefix": "",
+						"postfix": " \u276F",
+						"template": "¿ <#BAABDA>{{ .UserName }}</> <#D3DEDC>@</> <cyan>{{ .ComputerName }}</>"
+					}
+				},
+				{
+					"type": "path",
+					"style": "diamond",
+					"trailing_diamond": "\uE0B4",
+					"leading_diamond": "\uE0B6",
+					"foreground": "lightYellow",
+					"background": "#424242",
+					"properties": {
+						"prefix": "\uE5FF ",
+						"postfix": "",
+						"style": "full"
+					}
+				},
+				{
+					"type": "git",
+					"style": "diamond",
+					"trailing_diamond": "\uE0B4",
+					"leading_diamond": " \uE0B6",
+					"foreground": "#43CCEA",
+					"background": "#424242",
+					"properties": {
+						"prefix": "On ",
+						"postfix": "",
+						"template": "{{.UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uF692 {{ .StashCount }}{{ end }}"
+					}
+				},
+				{
+					"type": "node",
+					"style": "diamond",
+					"trailing_diamond": "\uE0B4",
+					"leading_diamond": " \uE0B6",
+					"foreground": "#42E66C",
+					"background": "#424242",
+					"properties": {
+						"prefix": "\uE718 ",
+						"postfix": ""
+					}
+				},
+				{
+					"type": "java",
+					"style": "diamond",
+					"trailing_diamond": "\uE0B4",
+					"leading_diamond": " \uE0B6",
+					"foreground": "#E64747",
+					"background": "#424242",
+					"properties": {
+						"prefix": "\uE738 ",
+						"postfix": ""
+					}
+				},
+				{
+					"type": "php",
+					"style": "diamond",
+					"trailing_diamond": "\uE0B4",
+					"leading_diamond": " \uE0B6",
+					"foreground": "#CAB8FF",
+					"background": "#424242",
+					"properties": {
+					  "prefix": "\ue608 ",
+					  "postfix": ""
+					}
+				  },
+				{
+					"type": "exit",
+					"style": "plain",
+					"foreground": "red",
+					"properties": {
+						"template": "C:{{ if gt .Code 0 }}{{ .Code }}{{ end }}",
+						"always_numeric": true
+					}
+				}
+			]
+		},
+		{
+			"type": "prompt",
+			"alignment": "left",
+			"newline": true,
+			"segments": [
+				{
+					"type": "text",
+					"style": "plain",
+					"foreground": "lightRed",
+					"properties": {
+						"prefix": "",
+						"text": "$",
+						"postfix": ""
+					}
+				}
+			]
+		}
+	]
+}
