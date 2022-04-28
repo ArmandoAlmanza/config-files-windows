@@ -17,7 +17,7 @@
 					"properties": {
 						"prefix": "",
 						"postfix": " \u276F",
-						"template": "¿ <#BAABDA>{{ .UserName }}</> <#D3DEDC>@</> <cyan>{{ .ComputerName }}</>"
+						"template": "Î» <#BAABDA>{{ .UserName }}</> <#D3DEDC>@</> <cyan>{{ .ComputerName }}</>"
 					}
 				},
 				{
@@ -78,10 +78,10 @@
 					"foreground": "#CAB8FF",
 					"background": "#424242",
 					"properties": {
-					  "prefix": "\ue608 ",
-					  "postfix": ""
+						"prefix": "\ue608 ",
+						"postfix": ""
 					}
-				  },
+				},
 				{
 					"type": "exit",
 					"style": "plain",
