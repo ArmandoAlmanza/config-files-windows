@@ -1,0 +1,12 @@
+[user]
+	name = Armando Almanza
+	email = armando.s.almanza@gmail.com
+
+
+[alias]
+	l = log --graph --abbrev-commit --decorate --format=format:'%C(bold yellow)%an%C(reset) %C(blue)(%ae)%C(reset) - %C(white)%s%C(reset) - %C(bold green)(%ar)%C(reset)' --all 
+	m = commit -m
+	s = status
+	aa = add .
+	p = push
+	pu = push -u origin main
