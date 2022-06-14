@@ -1,68 +1,79 @@
 {
-    "actions": [
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
         {
-            "command": {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "right"
+            },
+            "keys": "alt+shift+a"
+        },
+        {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
-                "split": "vertical"
-            },
-            "keys": "alt+shift+a"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": {
-                "action": "splitPane",
-                "split": "horizontal"
+                "split": "down"
             },
             "keys": "alt+shift+d"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
             "command": "closePane",
             "keys": "alt+shift+w"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         }
     ],
-    "multiLinePasteWarning": false,
     "confirmCloseAllTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "profiles": {
-        "defaults": {
-            "useAcrylic": true,
-            "acrylicOpacity": 1,
-            "backgroundImage": "D:\\Im\u00e1genes\\Wallpaper\\lofi12.gif",
-            "backgroundImageOpacity": 0.55,
+    "multiLinePasteWarning": false,
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "backgroundImage": "D:\\Im\u00e1genes\\Wallpaper\\lofi.gif",
+            "backgroundImageOpacity": 0.5,
             "backgroundImageStretchMode": "uniformToFill",
-            "bellStyle": [
+            "bellStyle": 
+            [
                 "audible",
                 "taskbar"
             ],
             "colorScheme": "One Half Dark",
             "cursorColor": "#FBCAFF",
             "cursorShape": "vintage",
-            "font": {
+            "font": 
+            {
                 "face": "DaddyTimeMono Nerd Font Mono",
                 "size": 12,
                 "weight": "normal"
             },
             "intenseTextStyle": "all",
+            "opacity": 100,
             "padding": "8, 8, 8, 8",
-            "scrollbarState": "hidden"
+            "scrollbarState": "hidden",
+            "useAcrylic": true
         },
-        "list": [
+        "list": 
+        [
             {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
@@ -76,13 +87,11 @@
                 "source": "Git"
             },
             {
-                "commandline": "powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
             },
             {
-                "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
                 "name": "Command Prompt",
@@ -96,7 +105,8 @@
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
