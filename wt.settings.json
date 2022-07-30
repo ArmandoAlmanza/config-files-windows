@@ -1,67 +1,92 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
             "command": "paste",
             "keys": "ctrl+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "right"
             },
-            "keys": "alt+shift+a"
+            "keys": "shift+alt+d"
         },
         {
-            "command": 
-            {
+            "command": {
+                "action": "splitPane",
+                "split": "down"
+            },
+            "keys": "shift+alt+s"
+        },
+        {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
         },
         {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "down"
+            "command": {
+                "action": "resizePane",
+                "direction": "left"
             },
-            "keys": "alt+shift+d"
+            "keys": "ctrl+alt+left"
+        },
+        {
+            "command": {
+                "action": "commandPalette"
+            },
+            "keys": "ctrl+shift+p"
         },
         {
             "command": "closePane",
             "keys": "alt+shift+w"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "command": {
+                "action": "resizePane",
+                "direction": "down"
+            },
+            "keys": "ctrl+alt+down"
+        },
+        {
+            "command": {
+                "action": "resizePane",
+                "direction": "right"
+            },
+            "keys": "ctrl+alt+right"
+        },
+        {
+            "command": {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "ctrl+alt+up"
         }
     ],
     "confirmCloseAllTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "initialCols": 165,
+    "initialRows": 34,
     "multiLinePasteWarning": false,
-    "profiles": 
-    {
-        "defaults": 
-        {
-            "backgroundImage": "D:\\Im\u00e1genes\\Wallpaper\\lofi.gif",
-            "backgroundImageOpacity": 0.5,
+    "profiles": {
+        "defaults": {
+            "backgroundImage": "D:\\Im\u00e1genes\\Wallpaper\\lofi_nature.gif",
+            "backgroundImageOpacity": 0.4,
             "backgroundImageStretchMode": "uniformToFill",
-            "bellStyle": 
-            [
+            "bellStyle": [
                 "audible",
                 "taskbar"
             ],
             "colorScheme": "One Half Dark",
             "cursorColor": "#FBCAFF",
             "cursorShape": "vintage",
-            "font": 
-            {
+            "elevate": false,
+            "font": {
                 "face": "DaddyTimeMono Nerd Font Mono",
                 "size": 12,
                 "weight": "normal"
@@ -72,19 +97,12 @@
             "scrollbarState": "hidden",
             "useAcrylic": true
         },
-        "list": 
-        [
+        "list": [
             {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
-            },
-            {
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-                "hidden": false,
-                "name": "Git Bash",
-                "source": "Git"
             },
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -105,8 +123,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -360,5 +377,7 @@
             "white": "#C0C0C0",
             "yellow": "#808000"
         }
-    ]
+    ],
+    "theme": "dark",
+    "useAcrylicInTabRow": true
 }
